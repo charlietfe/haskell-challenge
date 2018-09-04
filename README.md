@@ -2,7 +2,7 @@
 
 ## Objective
 
-During 30 days I'll take a challenge of learning Haskell and focusing on nothing else. In order to reach the goal and force me to do it, I'm going to write each day what I've learned that day.
+During 30 days I'll take a challenge of learning Haskell and focusing on nothing else but Haskell (my next stop will be Serverless Architectures). In order to reach the goal and force me to do it, I'm going to write each day what I've learned that day.
 
 ## Disclaimer
 
