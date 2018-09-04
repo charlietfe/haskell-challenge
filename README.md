@@ -28,7 +28,7 @@ A Functor is a type class that only needs one definition:
 
 **Some comments:**
 
-I created some examples here `examples/day1`.
+I created some examples here [day-1](https://github.com/charlietfe/haskell-challenge/tree/master/examples/day1).
 
 When you work with a type inside a context any transformation you need to perform should *respect the context* and apply the transformation to the elements inside of it.
 
