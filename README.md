@@ -6,7 +6,7 @@ During 30 days I'll take a challenge of learning Haskell and focusing on anythin
 
 ## Disclaimer
 
-I know the basics concepts of the language such us, data types, type classes, currying, lazy loading, high order functions, basic functional programming patters and so on. But I need some deeper knowledge to get the whole thing and be productive as soon as possible with projects at [Theam](https://github.com/theam). So probably my journey could not be follow as a tutorial for learning Haskell.
+I know the basics concepts of the language such us, data types, type classes, currying, lazy loading, high order functions, basic functional programming patterns and so on. But I need some deeper knowledge to get the whole thing and be productive as soon as possible with projects at [Theam](https://github.com/theam). So probably my journey could not be follow as a tutorial for learning Haskell.
 
 ## Material used to learn
 
