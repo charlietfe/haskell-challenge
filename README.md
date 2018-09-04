@@ -26,7 +26,7 @@ A Functor is a type class that only needs one definition:
 - `f` in the functor definition is not a function is refrerring to a functor type itself
     it could be `List`, `Maybe` or whatever.
 
-*Some comments:*
+**Some comments:**
 
 I created some examples here `examples/day1`.
 
