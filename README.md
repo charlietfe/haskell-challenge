@@ -41,7 +41,7 @@ The most obvious Functor types are Lists and Maybe types.
     allPartsHtml' = map renderHtml allParts
 ```
 
-- The Maybe type is well known to handle the absence of a value and can hold any type inside of it like `Int, Double or RobotPart`.
+- The `Maybe` type is well known to handle the absence of a value and can hold any type inside of it like `Int, Double or RobotPart`.
 
 Intuition tells you that if you have a `Maybe` type, the result after a transformation should also be wrapped inside a `Maybe` as well. Like this:
 
