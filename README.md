@@ -13,3 +13,50 @@ I know the basics concepts of the language such us, data types, type classes, cu
 I'm using [Get Programming in Haskell by Will Kurt](https://www.amazon.com/Get-Programming-Haskell-Will-Kurt) because is fairly new and is a short book if you compare with other Haskell books out there. Apart from that every unit finish with a nice capstone project to practice the concepts.
 
 *Note:* I will update the materials if I found something interesting along the way.
+
+### Day 1 - Functors
+
+Today I learnt the first type class to work with types in a context in this case was the `Functor` type class.
+
+A Functor is a type class that only needs one definition: 
+
+`fmap :: Functor f => (a -> b) -> fa -> fb`
+
+- We could use `<$>` instead as an infix function
+- `f` in the functor definition is not related to a function is the functor itself
+    it could be `List`, `Maybe` or whatever.
+
+*Some comments:*
+
+I created some examples here `examples/day1`.
+
+When you work with a type inside a context any transformation you need to perform should *respect the context* and apply the transformation to the elements inside of it.
+
+The most obvious Functor types are Lists and Maybe types.
+
+- Regarding Lists you can apply a `map` function alongside with transformation to each element of a List to get a new List with the elements transformed:
+
+```
+    allPartsHtml' :: [Html]
+    allPartsHtml' = map renderHtml allParts
+```
+
+- The Maybe type is well known to handle the absense of a value and can hold any type inside of it like `Int, Double or RobotPart`.
+
+The intuition tell us if we've a `Maybe` the result after a transformation should be wrapped inside a `Maybe` as well. Like this:
+
+```
+
+getPartById :: Int -> Maybe RobotPart
+getPartById id = Map.lookup id partsDB -- Find the RobotPart inside our DB Map 
+
+{-- 
+    Transform a Maybe RobotPart into a Maybe Html
+    The important part here is that the result will be wrapped also in a Maybe
+    even if renderHtml returns Html and not a Maybe Html
+--}
+
+partHtml :: Int -> Maybe Html
+partHtml partId = renderHtml <$> getPartById partId
+
+```
